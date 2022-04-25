@@ -30,5 +30,7 @@ jobs:
       - name: Run Python
         run: python test.py
         
+      - name: Install pyTest
+        run: pip install pytest
       - name: Run PyTest
         run: pytest test.py
