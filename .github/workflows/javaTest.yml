@@ -29,6 +29,7 @@ jobs:
       # Runs a single command using the runners shell
       - id: CompileJava
         run: javac ddTest.java 
+        continue-on-error: true
       - id: RunJava
         run: java Test > out.txt
       
