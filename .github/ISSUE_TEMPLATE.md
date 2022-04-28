@@ -1,4 +1,8 @@
--------- ISSUE -------
-Error occuered in Auto Test
-Last Updated by : {{ payload.sender.login }}.
-----------------------
+---
+title: java test : action failed.
+labels: invalid
+---
+
+```
+Last Updated by: {{ payload.sender.login }}.
+```
