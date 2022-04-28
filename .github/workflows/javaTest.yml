@@ -36,9 +36,9 @@ jobs:
       
       - name: Upload Output
         uses: actions/upload-artifact@v3.0.0
-        if: steps.CompileJava.outcome == 'failure'
-        with:
-          name: Out Artifact
-          path: out.txt
+        if: steps.CompileJava.outcome == 'failure' 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
         
         
