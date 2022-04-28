@@ -39,7 +39,7 @@ jobs:
         if: steps.CompileJava.outcome == 'failure' 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          update_existing: true
+          update_existing: update_existing
           search_existing: all
         id: create-issue
       - run: 'echo Created issue number ${{ steps.create-issue.outputs.number }}'
