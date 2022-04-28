@@ -29,6 +29,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Compile Java
         run: javac Test.java 
-        
+      - name: Check dir
+        run: ls
       - name: Run Java
-        run: java -cp java Test
+        run: java Test
