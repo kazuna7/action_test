@@ -27,6 +27,8 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       # Runs a single command using the runners shell
-      - name: Run Python
-        run: java -cp java Test 
+      - name: Compile Java
+        run: javac Test.java 
         
+      - name: Run Java
+        run: java -cp java Test
