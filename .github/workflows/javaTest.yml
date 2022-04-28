@@ -39,6 +39,8 @@ jobs:
         if: steps.CompileJava.outcome == 'failure' 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          update_existing: false
+          search_existing: open
     
         
         
