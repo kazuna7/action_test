@@ -29,8 +29,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Compile Java
         run: javac Test.java 
-      - name: Check dir
-        run: ls
       - name: Run Java
         run: java Test > out.txt
         
@@ -39,3 +37,6 @@ jobs:
         with:
           name: Out Artifact
           path: out.txt
+          
+      - name: Check dir
+        run: ls
