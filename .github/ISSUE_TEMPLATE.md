@@ -1,8 +1,8 @@
 ---
-title: java test : action failed.
+title: java test action failed.
 labels: invalid
 ---
 
 ```
-Last Updated by: {{ payload.sender.login }}.
+Last Updated by {{ payload.sender.login }}.
 ```
