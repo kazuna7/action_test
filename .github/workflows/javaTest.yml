@@ -32,4 +32,10 @@ jobs:
       - name: Check dir
         run: ls
       - name: Run Java
-        run: java Test
+        run: java Test > out.txt
+        
+      - name: Upload Output
+        uses: actions/upload-artifact@v3.0.0
+        with:
+          name: Out Artifact
+          path: out.txt
